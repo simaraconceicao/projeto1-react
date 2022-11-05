@@ -1,37 +1,38 @@
-import { Subtitle } from "./Subtitle"
-import { Text } from "./Text"
-import { Image } from "./Image"
+import Card from "./Card";
 
-
-export function Cards () {
+function Cards() {
   return (
-    <div className="cards">
-      <div className="card">
-        <Subtitle text="Git" />
-        <Text
-          paragraph="O Git é um sistema para controlar versão de códigos e é usado pela grande maioria das pessoas desenvolvedoras atualmente. Isso significa dizer que usando o git a gente pode esquecer o medo de perder alguma alteração que a gente fez no nosso código.
-          Ou se a gente precisar trabalhar em equipe fica super fácil de identificar quem mexeu em cada linha de código ou como resolver conflitos se as pessoas mexerem nas mesmas linhas." />
-        <Image link="https://c.tenor.com/zcBnwpK04MUAAAAC/thinking-issa-rae.gif" alt="gif-issa" />
-      </div>
-      <div className="card">
-        <Subtitle text="HTML" />
-        <Text
-          paragraph="HTML é uma abreviação de Hyper Text Markup Language (linguagem de marcação em hipertexto). Ou seja, não se trata de uma linguagem de programação, pois não tem lógica (algoritmos, processos etc). Ele cria a estrutura de uma página ou aplicação web, determinando a separação de layout e conteúdo." />
-        <Image link="https://c.tenor.com/nVmk2ThKqzsAAAAC/flexing-issa-rae.gif" alt="gif-issa" />
-      </div>
-      <div className="card">
-        <Subtitle text="CSS" />
-        <Text
-          paragraph="CSS é abreviação de Cascading Style Sheet (folha de estilos em cascata). É a linguagem que define estilos para o HTML, portanto, não se trata de linguagem de programação. CSS tem 'cascata' no nome, devido a sua forma de determinar a propriedade de um elemento - levando em consideração hierarquia de seletores e de chamadas de estilo (inline, internal e external). Para fazer o link de um arquivo .css em um documento .html, devemos inserir a tag no do documento, com o href do caminho do arquivo." />
-        <Image link="https://media.giphy.com/media/3oz8xuZupCwQf6ejUk/giphy.gif" alt="gif-issa" />
-      </div>
-      <div className="card">
-        <Subtitle text="JavaScript" />
-        <Text
-          paragraph="Segundo o livro Estrutura de dados e algoritmos com javascript', de Loiane Groner: Javascript é uma das linguagens de programação mais populares atualmente, é conhecida como a linguagem da internet porque os navegadores a entendem de modo nativo, sem a instalação de qualquer plugin.
-          Praticamente todos os sites e aplicações web usam javascript, até outras ferramentas que são usadas para web, no fim das contas vão precisar transformar o código em javascript para que o navegador entenda." />
-        <Image link="https://i.gifer.com/fxl3.gif" alt="gif-issa" />
-      </div>
-    </div>
-  )
+    <>
+      <Card
+        title="Nhoque"
+        description="Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! 
+        Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! 
+        Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! 
+        Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! 
+        Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! Melhor massa ever!!! "
+        imgPath="https://s2.glbimg.com/t4AEe4VtYIxDoD2AsDX06pRKU-w=/0x0:1000x667/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/M/w/0pEObGSUiFq1BwK61GFQ/gnocchi-in-tomato-sauce-with-cheese.jpg"
+      />
+
+      <Card
+        title="Moqueca de Banana da Terra"
+        description="A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! 
+        A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! A moqueca de 
+        Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a 
+        melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem 
+        tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! 
+        A moqueca de Banana é a melhor sem tirar nem por! A moqueca de Banana é a melhor sem tirar nem por! "
+        imgPath="https://cdn.panelinha.com.br/receita/1631538744646-moqueca-banana_empratada.jpg"
+      />
+
+      <Card
+        title="Not Dog"
+        description="Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. 
+        Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. 
+        Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. Not Dogzin é mt que dilissa.. 
+        Not Dogzin é mt que dilissa.. "
+        imgPath="https://www.receitop.com/wp-content/uploads/2020/11/cachorro-quente-vegano-1200x675.jpg"
+      />
+    </>
+  );
 }
+export default Cards;

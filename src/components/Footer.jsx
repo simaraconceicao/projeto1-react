@@ -1,5 +1,5 @@
-export function Footer (props) {
-  return (
-    <footer>{props.content}</footer>
-  )
+function Footer({ description }) {
+  return <p>{description}</p>;
 }
+
+export default Footer;

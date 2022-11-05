@@ -1,5 +1,5 @@
 import Card from "./Card";
-import profile from "../assets/lis.jpg";
+import profile from "../assets/profile.jpg";
 function Bio() {
   return (
     <Card

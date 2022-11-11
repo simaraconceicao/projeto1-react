@@ -1,14 +1,14 @@
-import { Subtitle } from "./Subtitle"
-import { Text } from "./Text"
-import { Image } from "./Image"
-
-
-export function Bio () {
+import Card from "./Card";
+import profile from "../assets/profile.jpg";
+function Bio() {
   return (
-      <div className="card">
-        <Subtitle text="Prazer, Simara Conceição!" />
-        <Text paragraph="Ex-aluna reprograma, fiz migração de carreira após os 30 anos e vindo da área de marketing, Desenvolvedora de software na Thoughtworks e Criadora do podcast e canal quero ser dev" />
-        <Image link="https://media.giphy.com/media/efhcZv18NpQDyRsaYa/giphy.gif" alt="meu gif" />
-      </div>
-  )
+    <Card
+      title="Lisandra Cruz"
+      description="Olá eu sou a Lis, mamis de Lala e Minerva Pantufa. Pessoa desenvolvedora na Thougtworks. 
+      Amo tecologia e educação e acredito fortemente na combinação delas para mudar o meio."
+      imgPath={profile}
+    />
+  );
 }
+
+export default Bio;
